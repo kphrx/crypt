@@ -36,7 +36,7 @@ else ifneq (,$(wildcard /usr/lib/libcrypt.*))
 	LDFLAGS ?= -lcrypt
 endif
 
-CFLAGS += -fPIC -I $(ERTS_INCLUDE_DIR)
+CFLAGS += -fPIC -I $(ERTS_INCLUDE_DIR) $(_CFLAGS)
 
 LDFLAGS += -shared
 

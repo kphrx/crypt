@@ -5,10 +5,9 @@
  * Written by Ted Unangst
  */
 
-#include <string.h>
-#include <strings.h>
-
 #include "explicit_bzero.h"
+
+#include <string.h>
 
 /*
  * explicit_bzero - don't let the compiler optimize away bzero
