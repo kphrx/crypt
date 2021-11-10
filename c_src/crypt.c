@@ -29,7 +29,7 @@
  * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  */
-#if defined(__GNUC__) && defined(__linux__)
+#ifndef _GNU_SOURCE
 #define _GNU_SOURCE
 #endif
 #if defined(__linux__) || (defined(__SVR4) && defined(__sun))
